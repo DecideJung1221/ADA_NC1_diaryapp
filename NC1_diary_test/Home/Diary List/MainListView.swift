@@ -75,8 +75,3 @@ struct MainListView: View {
 
 
 
-//#Preview {
-//    MainListView()
-//        .environmentObject(MemoStore())
-//}
-//
