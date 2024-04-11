@@ -20,21 +20,31 @@ struct MainListView: View {
         
         NavigationView{
             VStack {
-                ScrollView(.horizontal) {
-                    LazyHStack(alignment: .top, spacing: 10) {
-                                    ForEach(colors, id: \.self) { color in
-                                        HStack{
-                                            Rectangle()
-                                                .foregroundColor(color)
-                                                .frame(width: 400, height: 100)
-                                        }
-                                    }
-                                
-                            }
-                            .frame(width: 350, height: 100)
-                            .padding()
+                ZStack{
+                    RoundedRectangle(cornerRadius: 25)
+                        .foregroundColor(Color.customBackgroundsky)
+                        .frame(width: 350, height: 100)
+                        .padding()
+                    HStack{
+                        Spacer()
+                        Text("4월")
+                            .font(.title2)
+                        Spacer()
+                        VStack{
+                            Text("수입: 10,000,000원")
+                                .font(.title3)
+                                .foregroundStyle(.secondary)
+                            Text("지출: 10,000,000원")
+                                .font(.title3)
+                                .foregroundStyle(.secondary)
+                            
                         }
-                
+                        .padding()
+                        Spacer()
+                    }
+                    .frame(width: 350, height: 100)
+                    .padding()
+                }
                 ScrollView {
                     LazyVGrid(columns: columns) {
                           ForEach(store.list) { memo in

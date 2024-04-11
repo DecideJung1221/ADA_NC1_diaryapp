@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		98720B9C2BC7AC0100673BBC /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98720B9B2BC7AC0100673BBC /* CalenderView.swift */; };
+		98720B9E2BC7CB3400673BBC /* extension_Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98720B9D2BC7CB3400673BBC /* extension_Color.swift */; };
 		98E25F952BC6A8BE007466F3 /* NC1_diary_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E25F942BC6A8BE007466F3 /* NC1_diary_testApp.swift */; };
 		98E25F972BC6A8BE007466F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E25F962BC6A8BE007466F3 /* ContentView.swift */; };
 		98E25F992BC6A8BF007466F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E25F982BC6A8BF007466F3 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		98720B9B2BC7AC0100673BBC /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		98720B9D2BC7CB3400673BBC /* extension_Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_Color.swift; sourceTree = "<group>"; };
 		98E25F912BC6A8BE007466F3 /* NC1_diary_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NC1_diary_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E25F942BC6A8BE007466F3 /* NC1_diary_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC1_diary_testApp.swift; sourceTree = "<group>"; };
 		98E25F962BC6A8BE007466F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				98E25FCC2BC6AC35007466F3 /* Memo.swift */,
 				98E25FCE2BC6AC44007466F3 /* MemoStore.swift */,
+				98720B9D2BC7CB3400673BBC /* extension_Color.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				98E25FCD2BC6AC35007466F3 /* Memo.swift in Sources */,
 				98E25FA12BC6A8BF007466F3 /* NC1_diary_test.xcdatamodeld in Sources */,
 				98720B9C2BC7AC0100673BBC /* CalenderView.swift in Sources */,
+				98720B9E2BC7CB3400673BBC /* extension_Color.swift in Sources */,
 				98E25F9E2BC6A8BF007466F3 /* Persistence.swift in Sources */,
 				98E25FD32BC76B49007466F3 /* DetailView.swift in Sources */,
 				98E25FD52BC76B5F007466F3 /* MainListView.swift in Sources */,
