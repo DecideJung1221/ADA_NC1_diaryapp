@@ -12,8 +12,19 @@ struct MemoCell: View{
     
     var body: some View{
         HStack{
-            Text("\(memo.money)")
-                .font(.body)
+//            if let memo = memo{
+                if memo.money <= 0 {
+                    Text("\(memo.money)")
+                        .font(.body)
+                        .foregroundStyle(.red)
+                }else{
+                    Text("\(memo.money)")
+                        .foregroundStyle(.blue)
+                        .font(.body)
+                }
+                
+//            }
+            
             
             VStack(alignment: .leading){
                 
