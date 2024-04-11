@@ -14,15 +14,11 @@ class MemoStore: ObservableObject{
 
     init(){
         list = [
-            Memo(content: "Hello", insertDate: Date.now, money: 30000),
-            Memo(content: "Awesome", insertDate: Date.now.addingTimeInterval(3600 * -24), money: 30000),
-            Memo(content: "wow", insertDate: Date.now.addingTimeInterval(3600 * -48), money: 30000),
-            Memo(content: "Hello", insertDate: Date.now, money: 30000),
-            Memo(content: "Awesome", insertDate: Date.now.addingTimeInterval(3600 * -24), money: 30000),
-            Memo(content: "wow", insertDate: Date.now.addingTimeInterval(3600 * -48), money: 30000),
-            Memo(content: "Hello", insertDate: Date.now, money: 30000),
-            Memo(content: "Awesome", insertDate: Date.now.addingTimeInterval(3600 * -24), money: 30000),
-            Memo(content: "wow", insertDate: Date.now.addingTimeInterval(3600 * -48), money: 30000)
+            Memo(content: "월급이 들어왔다!! 너무 기쁘다 행복하다", insertDate: Date.now, money: 1000000),
+            Memo(content: "학식먹음 핫도그 짱 맛나", insertDate: Date.now.addingTimeInterval(3600 * -24), money: -3000),
+            Memo(content: "무엇을 샀을까 껄껄", insertDate: Date.now.addingTimeInterval(3600 * -48), money: -203000),
+            Memo(content: "까까 내기 승리!!!", insertDate: Date.now, money: 1000),
+            Memo(content: "연못에서 동전을 주움 껄껄껄껄", insertDate: Date.now.addingTimeInterval(3600 * -24), money: 100)
             
         ]
     }
@@ -33,12 +29,13 @@ class MemoStore: ObservableObject{
         list.insert(Memo(content: memo,insertDate: date, money: money), at: 0)
     }
     
-    func update(memo: Memo?,content: String,date: Date){
+    func update(memo: Memo?,content: String,date: Date,money: Int){
         guard let memo = memo else {
             return
         }
         memo.content = content
         memo.insertDate = date
+        memo.money = money
     }
     
     

@@ -12,13 +12,13 @@ struct MemoCell: View{
     
     var body: some View{
         HStack{
-            Text(memo.content)
+            Text("\(memo.money)")
                 .font(.body)
-                .lineLimit(1)
             
             VStack(alignment: .leading){
                 
-                Text("\(memo.money)")
+                
+                Text(memo.content)
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 
@@ -26,8 +26,8 @@ struct MemoCell: View{
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 
-                
             }
+            .frame(width: 200)
         }
     }
 }
