@@ -13,15 +13,7 @@ struct MemoCell: View{
     var body: some View{
         HStack{
 //            if let memo = memo{
-                if memo.money <= 0 {
-                    Text("\(memo.money)")
-                        .font(.body)
-                        .foregroundStyle(.red)
-                }else{
-                    Text("\(memo.money)")
-                        .foregroundStyle(.blue)
-                        .font(.body)
-                }
+                
                 
 //            }
             
@@ -43,6 +35,18 @@ struct MemoCell: View{
             .monospacedDigit()
             .padding(.horizontal,5)
             .frame(width: 200)
+            
+            if memo.money <= 0 {
+                Text("\(memo.money)")
+                    .font(.body)
+                    .foregroundStyle(.red)
+                    .padding(.horizontal,5)
+            }else{
+                Text("\(memo.money)")
+                    .foregroundStyle(.blue)
+                    .padding(.horizontal,5)
+                    .font(.body)
+            }
         }
     }
 }

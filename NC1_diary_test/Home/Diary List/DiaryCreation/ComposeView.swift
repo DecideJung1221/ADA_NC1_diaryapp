@@ -54,18 +54,28 @@ struct ComposeView: View {
                                 money = memo.money
                             }
                         }
-                        .frame(alignment: .trailing)
+                        .frame(width: 125)
+                        .border(.secondary)
                     }
                 .padding()
                 
                 Text("상황")
-                TextEditor(text: $content)
-                    .padding()
-                    .onAppear{
-                        if let memo = memo{
-                            content = memo.content
+                    TextEditor(text: $content)
+                    .overlay(alignment: .topLeading) {
+                                Text("입력하세요")
+                                    .foregroundStyle(content.isEmpty ? .gray : .clear)
+                                    .font(.title3)
+                                    }
+                        .onAppear{
+                            if let memo = memo{
+                                content = memo.content
+                            }
                         }
-                    }
+                        .border(.secondary)
+                        .padding()
+                    
+
+                
             }
             .navigationTitle(memo != nil ? "편집" : "new")
             .navigationBarTitleDisplayMode(.inline)

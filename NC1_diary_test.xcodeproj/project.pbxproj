@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9809FBB72BC8C9A700F7DFC2 /* Customtextedit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809FBB62BC8C9A700F7DFC2 /* Customtextedit.swift */; };
 		98720B9C2BC7AC0100673BBC /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98720B9B2BC7AC0100673BBC /* CalenderView.swift */; };
 		98720B9E2BC7CB3400673BBC /* extension_Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98720B9D2BC7CB3400673BBC /* extension_Color.swift */; };
 		98E25F952BC6A8BE007466F3 /* NC1_diary_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E25F942BC6A8BE007466F3 /* NC1_diary_testApp.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9809FBB62BC8C9A700F7DFC2 /* Customtextedit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customtextedit.swift; sourceTree = "<group>"; };
 		98720B9B2BC7AC0100673BBC /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
 		98720B9D2BC7CB3400673BBC /* extension_Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_Color.swift; sourceTree = "<group>"; };
 		98E25F912BC6A8BE007466F3 /* NC1_diary_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NC1_diary_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9809FBB52BC8C99200F7DFC2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				98720B9D2BC7CB3400673BBC /* extension_Color.swift */,
+				9809FBB62BC8C9A700F7DFC2 /* Customtextedit.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		98E25F882BC6A8BE007466F3 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +127,7 @@
 		98E25F932BC6A8BE007466F3 /* NC1_diary_test */ = {
 			isa = PBXGroup;
 			children = (
+				9809FBB52BC8C99200F7DFC2 /* Extension */,
 				98E25F942BC6A8BE007466F3 /* NC1_diary_testApp.swift */,
 				98E25F962BC6A8BE007466F3 /* ContentView.swift */,
 				98E25FC32BC6AA03007466F3 /* Home */,
@@ -195,7 +207,6 @@
 			children = (
 				98E25FCC2BC6AC35007466F3 /* Memo.swift */,
 				98E25FCE2BC6AC44007466F3 /* MemoStore.swift */,
-				98720B9D2BC7CB3400673BBC /* extension_Color.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -331,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98E25FCD2BC6AC35007466F3 /* Memo.swift in Sources */,
+				9809FBB72BC8C9A700F7DFC2 /* Customtextedit.swift in Sources */,
 				98E25FA12BC6A8BF007466F3 /* NC1_diary_test.xcdatamodeld in Sources */,
 				98720B9C2BC7AC0100673BBC /* CalenderView.swift in Sources */,
 				98720B9E2BC7CB3400673BBC /* extension_Color.swift in Sources */,
