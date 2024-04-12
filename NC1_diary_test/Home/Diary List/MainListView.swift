@@ -27,14 +27,32 @@ struct MainListView: View {
                         .padding()
                     HStack{
                         Spacer()
-                        Text("4월")
-                            .font(.title2)
+                        HStack{
+                            Text("4월")
+                                .font(.title2)
+                            VStack{
+                                
+                                Button{print("upper")
+                                }label: {
+                                    Image(systemName: "arrowtriangle.up.fill")
+                                        .resizable()
+                                        .frame(width: 10,height: 10)
+                                }
+                                Button{print("down")
+                                }label: {
+                                    Image(systemName: "arrowtriangle.down.fill")
+                                        .resizable()
+                                        .frame(width: 10,height: 10)
+                                }
+                                
+                            }
+                        }
                         Spacer()
                         VStack{
-                            Text("수입: 10,000,000원")
+                            Text("수입: 1,000,000원")
                                 .font(.title3)
                                 .foregroundStyle(.secondary)
-                            Text("지출: 10,000,000원")
+                            Text("지출: 1,000,000원")
                                 .font(.title3)
                                 .foregroundStyle(.secondary)
                             

@@ -31,13 +31,17 @@ struct MemoCell: View{
                 
                 Text(memo.content)
                     .font(.caption)
-                    .foregroundStyle(.secondary)
-                
+                    .foregroundColor(.black)
+                    .lineLimit(1)
                 Text(memo.insertDate, style: .date)
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundColor(.black)
+                    
+                
                 
             }
+            .monospacedDigit()
+            .padding(.horizontal,5)
             .frame(width: 200)
         }
     }
