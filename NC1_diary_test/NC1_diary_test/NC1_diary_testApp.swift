@@ -13,6 +13,8 @@ struct NC1_diary_testApp: App {
 
     var body: some Scene {
         WindowGroup {
+//            CalenderView()
+            
             ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }

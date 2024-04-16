@@ -39,7 +39,7 @@ class MemoStore: ObservableObject{
             Task(title: "월급이 들어왔다!! 너무 기쁘다 행복하다", time: Date.now, money: 1000000),
             Task(title: "학식먹음 핫도그 짱 맛나", time: Date.now.addingTimeInterval(3600 * -24), money: -3000),
             Task(title: "무엇을 샀을까 껄껄", time: Date.now.addingTimeInterval(3600 * -48), money: -203000),
-            Task(title: "까까 내기 승리!!!", time: Date.now, money: 1000),
+            Task(title: "까까 내기 졌다!!!", time: Date.now, money: -1000),
             Task(title: "연못에서 동전을 주움 껄껄껄껄", time: Date.now.addingTimeInterval(3600 * -24), money: 100)
             
         ]

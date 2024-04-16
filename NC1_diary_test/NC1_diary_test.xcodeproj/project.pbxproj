@@ -15,6 +15,7 @@
 		981BD76E2BCD398C0028563F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BD76D2BCD398C0028563F /* Task.swift */; };
 		981BD7702BCD3A560028563F /* CalendarHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BD76F2BCD3A560028563F /* CalendarHome.swift */; };
 		981BD7722BCD3A650028563F /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BD7712BCD3A650028563F /* CustomDatePicker.swift */; };
+		981BD7742BCD5E970028563F /* diary_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BD7732BCD5E970028563F /* diary_test.swift */; };
 		98720B9E2BC7CB3400673BBC /* extension_Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98720B9D2BC7CB3400673BBC /* extension_Color.swift */; };
 		98E25F952BC6A8BE007466F3 /* NC1_diary_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E25F942BC6A8BE007466F3 /* NC1_diary_testApp.swift */; };
 		98E25F972BC6A8BE007466F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E25F962BC6A8BE007466F3 /* ContentView.swift */; };
@@ -58,7 +59,8 @@
 		981BD76B2BCD39830028563F /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		981BD76D2BCD398C0028563F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		981BD76F2BCD3A560028563F /* CalendarHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHome.swift; sourceTree = "<group>"; };
-		981BD7712BCD3A650028563F /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		981BD7712BCD3A650028563F /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		981BD7732BCD5E970028563F /* diary_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diary_test.swift; sourceTree = "<group>"; };
 		98720B9D2BC7CB3400673BBC /* extension_Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_Color.swift; sourceTree = "<group>"; };
 		98E25F912BC6A8BE007466F3 /* NC1_diary_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NC1_diary_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E25F942BC6A8BE007466F3 /* NC1_diary_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC1_diary_testApp.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				981BD76F2BCD3A560028563F /* CalendarHome.swift */,
 				981BD7712BCD3A650028563F /* CustomDatePicker.swift */,
+				981BD7732BCD5E970028563F /* diary_test.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				981BD76A2BCD39650028563F /* DiaryHome.swift in Sources */,
 				98E25FA12BC6A8BF007466F3 /* NC1_diary_test.xcdatamodeld in Sources */,
 				98720B9E2BC7CB3400673BBC /* extension_Color.swift in Sources */,
+				981BD7742BCD5E970028563F /* diary_test.swift in Sources */,
 				981BD76E2BCD398C0028563F /* Task.swift in Sources */,
 				98E25F9E2BC6A8BF007466F3 /* Persistence.swift in Sources */,
 				98E25FD32BC76B49007466F3 /* DetailView.swift in Sources */,
