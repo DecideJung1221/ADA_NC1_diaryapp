@@ -8,6 +8,7 @@
 import SwiftUI
 
 @main
+
 struct NC1_diary_testApp: App {
     let persistenceController = PersistenceController.shared
 

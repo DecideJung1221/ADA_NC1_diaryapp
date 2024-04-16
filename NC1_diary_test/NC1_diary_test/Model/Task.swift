@@ -22,6 +22,8 @@ class Task: Identifiable, ObservableObject{
     @Published var title: String
     @Published var time: Date = Date()
     @Published var money: Int
+//    @Published var Month: Int
+    
     init(title: String, time: Date, money: Int ) {
         id = UUID()
         self.title = title
@@ -36,14 +38,39 @@ class MemoStore: ObservableObject{
     
     init(){
         tasks = [
-            Task(title: "월급이 들어왔다!! 너무 기쁘다 행복하다", time: Date.now, money: 1000000),
+            Task(title: "용돈이 들어왔다!! 너무 기쁘다 행복하다", time: Date.now, money: 1000000),
             Task(title: "학식먹음 핫도그 짱 맛나", time: Date.now.addingTimeInterval(3600 * -24), money: -3000),
             Task(title: "무엇을 샀을까 껄껄", time: Date.now.addingTimeInterval(3600 * -48), money: -203000),
             Task(title: "까까 내기 졌다!!!", time: Date.now, money: -1000),
-            Task(title: "연못에서 동전을 주움 껄껄껄껄", time: Date.now.addingTimeInterval(3600 * -24), money: 100)
+            Task(title: "연못에서 동전을 주움 껄껄껄껄", time: Date.now.addingTimeInterval(3600 * -24), money: 100),
+            Task(title: "용돈! 너무 기쁘다 행복하다", time: Date.now.addingTimeInterval(3600 * -120), money: 1000000),
+            Task(title: "학식먹음 핫도그 짱 맛나", time: Date.now.addingTimeInterval(3600 * -180), money: -3000),
+            Task(title: "무엇을 샀을까 껄껄", time: Date.now.addingTimeInterval(3600 * -240), money: -203000),
+            Task(title: "아이스크림내기 졌다!!!", time: Date.now.addingTimeInterval(3600 * -136), money: -1000),
+            Task(title: "연못에서 동전을 주움 껄껄껄껄", time: Date.now.addingTimeInterval(3600 * -148), money: 100),
+            Task(title: "무엇을 샀을까 껄껄", time: Date.now.addingTimeInterval(3600 * -480), money: -203000),
+            Task(title: "아이스크림내기 졌다!!!", time: Date.now.addingTimeInterval(3600 * -360), money: -1000),
+            Task(title: "연못에서 동전을 주움 껄껄껄껄", time: Date.now.addingTimeInterval(3600 * -520), money: 100)
             
         ]
     }
+
+//    func month(memo: Task?, m: Int) -> Int {
+//        let mm = m
+//        let formatter = DateFormatter()
+//        
+//        formatter.dateFormat = "MM"
+//        
+//        let dateMonth = formatter.string(from: memo?.time ?? "")
+//        guard let memo = memo else {
+////            return 0
+            
+//        if memo.tim == mm{
+//            
+//        }
+        
+//        return mm
+//    }
     
     func insert(memo: String, date: Date, money: Int){
         
@@ -71,7 +98,16 @@ class MemoStore: ObservableObject{
             tasks.remove(at: index)
         }
     }
-    
+//    
+//    func format() ->[Int]{
+//        let formatter = DateFormatter()
+//        
+//        formatter.dateFormat = "YYYY MMMM"
+//        let date = formatter.string(from: currentDate)
+//        
+//        return date.components(separatedBy: " ")
+//        
+//    }
     
 
 }

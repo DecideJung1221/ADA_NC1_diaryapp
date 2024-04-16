@@ -42,7 +42,7 @@ struct MemoCell: View{
                     
                     Text(memo.time, style: .date)
                         .font(.caption)
-                        .foregroundColor(.black)
+                        .foregroundColor(.secondary)
                 }
                 Spacer()
             }
