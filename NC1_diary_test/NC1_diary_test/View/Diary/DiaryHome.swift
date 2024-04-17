@@ -72,9 +72,8 @@ struct DiaryHome: View {
                                 }
                                 
                             }
-                            .onChange(of: currentMonth){
-                                newValue in
-                                //updating Month...
+                            
+                            .onChange(of: currentMonth) {
                                 currentDate = getCurrentMonth()
                             }
                         }
@@ -226,8 +225,9 @@ struct DiaryHome: View {
         //        store
         
         
-        for memo in store.tasks{
-            var components = calendar.dateComponents([.year, .month, .day],from: (memo.time))
+        for memo in store.tasks {
+            let components = calendar.dateComponents([.year, .month, .day],from: (memo.time))
+            
             if (month) == (Int((components.month)!)) {
                 if memo.money <= 0 {
                     
@@ -235,7 +235,9 @@ struct DiaryHome: View {
                     //            print(1)
                 }
             }
-        };return test
+        }
+        
+        return test
     }
     
     
@@ -247,9 +249,9 @@ struct DiaryHome: View {
         //                                }
         //        store
         
-        
         for memo in store.tasks{
-            var components = calendar.dateComponents([.year, .month, .day],from: (memo.time))
+            let components = calendar.dateComponents([.year, .month, .day],from: (memo.time))
+            
             if (month) == (Int((components.month)!)) {
                 if memo.money >= 0 {
                     

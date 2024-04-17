@@ -129,8 +129,6 @@ struct CustomDatePicker: View {
             .padding(.top,25)
         }
         .onChange(of: currentMonth){
-            newValue in
-            //updating Month...
             currentDate = getCurrentMonth()
         }
         }

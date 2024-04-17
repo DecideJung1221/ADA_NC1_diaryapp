@@ -20,13 +20,13 @@ struct MemoCell: View{
             
             if memo.money <= 0 {
                 
-                Image(systemName: "pencil.tip.crop.circle.badge.plus.fill")
+                Image(systemName: "pencil.tip.crop.circle.badge.minus.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 30)
                     .foregroundColor(.red )
             }else{
-                Image(systemName: "pencil.tip.crop.circle.badge.minus.fill")
+                Image(systemName: "pencil.tip.crop.circle.badge.plus.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 30)
